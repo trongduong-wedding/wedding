@@ -604,6 +604,14 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 420px) {
+  .bg-gallery{
+    height: 55vh !important;
+    img{
+      width: 25vh !important;
+    }
+  }
+}
 @media (max-width: 400px) {
   .bg-gallery{
     height: 50vh !important;
@@ -612,7 +620,14 @@ pre code {
     }
   }
 }
-
+@media only screen and (max-width: 770px) and (min-width: 400px) {
+  .bg-gallery{
+    height: 90 !important;
+    img{
+      width: 50vh !important;
+    }
+  }
+}
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
@@ -9776,14 +9791,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .image-card{
   position: relative;
-    width: fit-content;
-    margin: 0 auto;
-    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
-    img{
-      width: 81vh;
-      position: relative;
-      border-radius: 1%;
-    }
+  border-radius: 1%;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+  img{
+    width: 81vh;
+    position: relative;
+    border-radius: 1%;
+  }
 }
 .ship-view-box {
   transition: all 2s;
