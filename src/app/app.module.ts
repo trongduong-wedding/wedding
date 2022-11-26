@@ -7,11 +7,13 @@ import { WeddingComponent } from './wedding/wedding.component';
 import { ShareModule } from './share/share.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeddingComponent
+    WeddingComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

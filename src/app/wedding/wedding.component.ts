@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-wedding',
@@ -12,6 +13,7 @@ export class WeddingComponent implements OnInit {
   active: boolean = true;
   srcView = "";
   slides = [
+    "assets/img/gallery/LEX08131.jpg",
     "assets/img/gallery/LEX07764.JPG",
     "assets/img/gallery/LEX07822.JPG",
     "assets/img/gallery/LEX07862.JPG",
@@ -27,7 +29,9 @@ export class WeddingComponent implements OnInit {
     "assets/img/gallery/LEX08183.JPG",
     "assets/img/gallery/LEX08214.JPG", 
   ]
-  constructor() { 
+  constructor(
+    private router:Router
+  ) { 
   }
 
   ngOnInit(): void {
@@ -49,5 +53,9 @@ export class WeddingComponent implements OnInit {
   onTransitionEnd(){
     this.srcView = this.slides[this.index];
     this.active = true;
+  }
+  onGoToInvitation(){
+    this.router.navigateByUrl("/invitation");
+
   }
 }

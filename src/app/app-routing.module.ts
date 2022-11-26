@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CardComponent } from './card/card.component';
 import { WeddingComponent } from './wedding/wedding.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'wedding' ,pathMatch: "full"},
-  { path: 'wedding', component: WeddingComponent },
+  { path: '', component: WeddingComponent },
+  { path: 'invitation', component: CardComponent },
 ];
 
 @NgModule({
