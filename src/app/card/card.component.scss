@@ -1,11 +1,20 @@
 .txt-moi {
   height: fit-content;
   position: absolute;
-  top: 67vw;
+  top: 70vw;
   font-family: "Dancing Script", cursive;
-  font-size: 0.5rem;
+  font-size: 2rem;
 }
 
 .image{
-    width: 100vw;
+    width: 100vh;
+}
+@media (max-width: 900px) {
+    .image{
+        width: 100vw !important;
+    }
+    .txt-moi{
+        top: 64vw !important;
+        font-size: 1rem !important;
+    }
 }
