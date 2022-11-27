@@ -6,6 +6,7 @@ import { WeddingComponent } from './wedding/wedding.component';
 const routes: Routes = [
   { path: '', component: WeddingComponent },
   { path: 'invitation', component: CardComponent },
+  { path: 'invitation/:textmoi', component: CardComponent },
 ];
 
 @NgModule({

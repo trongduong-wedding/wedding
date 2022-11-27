@@ -1,5 +1,11 @@
-@media (max-width: 400px) {
-    .image{
-        width: 100% !important;
-    }
-  }
+.txt-moi {
+  height: fit-content;
+  position: absolute;
+  top: 67vw;
+  font-family: "Dancing Script", cursive;
+  font-size: 0.5rem;
+}
+
+.image{
+    width: 100vw;
+}

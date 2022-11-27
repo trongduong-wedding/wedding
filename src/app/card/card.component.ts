@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  text_moi = "";
+  constructor(
+    private activatedRouter: ActivatedRoute, 
+    private router: Router) { }
 
   ngOnInit(): void {
+    this.getTextMoi();
   }
-
+  getTextMoi(){
+    this.text_moi = this.activatedRouter.snapshot.params['textmoi']
+  }
 }
